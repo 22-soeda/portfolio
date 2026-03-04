@@ -31,17 +31,33 @@
   }
 
   .a4-page {
-    width: 210mm;
-    min-height: 297mm;
-    margin: 0 auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-  }
-  @media print {
-    .a4-page { box-shadow: none; margin: 0; page-break-after: always; break-after: page; }
-    @page { margin: 0; size: A4 portrait; }
-  }
+      width: 210mm;
+      height: 297mm;        /* min-heightからheightに変更し、高さをA4ぴったりに完全固定 */
+      overflow: hidden;     /* 枠（297mm）を1ミリでも超えた要素は隠す（次ページに送らない） */
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-sizing: border-box; /* パディング（内側の余白）を含めてサイズを計算させる */
+      margin-bottom: 20px;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .a4-page {
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+        break-after: page;
+        margin-bottom: 0;
+      }
+      @page {
+        size: A4 portrait;
+        margin: 0 !important; /* ブラウザ側の余白設定を強制的に排除 */
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-200 py-8 print:py-0 print:bg-white text-gray-700 leading-relaxed">

@@ -1,0 +1,93 @@
+<style>
+  :root {
+    --size-title: 2.2rem;       /* プロジェクトのタイトル */
+    --size-heading: 1.4rem;     /* 各セクションの見出し */
+    --size-body: 1.05rem;       /* 本文テキスト */
+    --size-caption: 0.9rem;     /* 画像キャプション・補足 */
+  }
+</style>
+
+<div class="a4-page p-10 flex flex-col gap-6">
+
+  <div class="border-b-2 border-blue-200 pb-3 mb-2">
+    <h2 class="font-bold text-gray-700 tracking-wide" style="font-size: var(--size-title);">
+      活動紹介 : NHK番組「魔改造の夜」への出演
+    </h2>
+  </div>
+
+  <div class="flex flex-row gap-8">
+    
+    <div class="w-[45%] flex flex-col gap-8">
+      
+      <div class="flex flex-col gap-2">
+        <img src="./images/03_withScator.jpg" alt="魔改造の夜 開発機体" class="w-full h-auto max-h-64 object-contain mx-auto rounded-md shadow-inner">
+        <p class="text-gray-600 font-medium text-center" style="font-size: var(--size-caption);">
+          ▲ キックスケーターをベースにした25m綱渡り走行機体
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <img src="./images/03_TV.jpg" alt="開発風景や回路" class="w-full h-auto max-h-64 object-contain mx-auto rounded-md shadow-inner">
+        <p class="text-gray-600 font-medium text-center" style="font-size: var(--size-caption);">
+          ▲ TV放送での出演場面（右の人物）
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <img src="./images/03_YOXO2025.jpg" alt="本番での走行" class="w-full h-auto max-h-100 object-contain mx-auto rounded-md shadow-inner">
+        <p class="text-gray-600 font-medium text-center" style="font-size: var(--size-caption);">
+          ▲ YOXO2025イベントでの展示
+        </p>
+      </div>
+
+    </div>
+
+    <div class="w-[55%] flex flex-col gap-7 text-gray-700" style="font-size: var(--size-body);">
+      
+      <div class="bg-gray-100 p-4 rounded-md border-l-4 border-blue-400 flex flex-col gap-2 shadow-sm">
+        <div class="flex items-baseline gap-4">
+          <span class="font-bold text-gray-500 min-w-12">期間</span>
+          <span class="font-semibold text-gray-800">約40日間（2024年2月放送）</span>
+        </div>
+        <div class="flex items-baseline gap-4">
+          <span class="font-bold text-gray-500 min-w-12">役割</span>
+          <span class="font-semibold text-gray-800">
+            電気回路制作<br> (要素開発時 : 機械設計&姿勢制御)<br>
+          </span>
+        </div>
+      </div>
+
+      <section>
+        <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2" style="font-size: var(--size-heading);">
+          <span class="w-1.5 h-5 bg-blue-500 inline-block"></span>活動の目的と概要
+        </h3>
+        <p class="leading-relaxed pl-3.5 indent-[1em]">
+          NHKの番組「魔改造の夜」に出演し、「キックスケーター25m綱渡り」というテーマに東工大チームとして挑戦しました。予算5万円、ルール発表から納入までわずか40日という過酷な制約の中、ジャイロ効果を利用したモーメンタムホイールで姿勢を維持し、CO2ジェットで前進する機体を開発しました。本番では4.37秒というタイムで25mを完走し、1位とわずか0.03秒差の2位という結果を残しました。
+        </p>
+      </section>
+
+      <section>
+        <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2" style="font-size: var(--size-heading);">
+          <span class="w-1.5 h-5 bg-blue-500 inline-block"></span>具体的な活動内容
+        </h3>
+        <div class="pl-3.5 space-y-3 indent-[1em]">
+          <p>
+            私は個人でのロボット製作経験を活かし、チームの足りない部分を補う遊撃的なポジションで開発に参加しました。初期はモーメンタムホイールの機構設計やプロペラの制御プログラムを担当し、納入1週間前からは電気回路のメイン製作者へと移行しました。
+            仕様変更によるモータードライバのトラブルや予算の切迫など、数々の危機に直面しましたが、徹夜での基板製作と実装、本番へ向けたワークフローの構築を担い、納入当日の朝に機体を完成へと導きました。
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2" style="font-size: var(--size-heading);">
+          <span class="w-1.5 h-5 bg-blue-500 inline-block"></span>活動を通じた学び
+        </h3>
+        <p class="leading-relaxed pl-3.5 indent-[1em]">
+          極限状態の開発現場において、各人の強みが自然と活かされるチームの生態系を肌で学びました。一方で、当初は優秀な上級生に遠慮して主体性を発揮できず、結果として本番でのヒューマンエラーなど、防げたはずのトラブルを招いてしまったことは大きな悔いとして残っています。
+          この経験から、チーム開発における<span class="font-bold">当事者意識の重要性</span>と、あらゆる知的労働の基盤となる<span class="font-bold">基礎体力の大切さ</span>を痛感しました。
+        </p>
+      </section>
+
+    </div>
+  </div>
+</div>
