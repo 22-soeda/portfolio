@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* PDF出力時（印刷時）に背景色を消さないための設定 */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

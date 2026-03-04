@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - 添田 悠介</title>
+  <link href="./output.css" rel="stylesheet">
+  <style>
+  /* ▼ 1. フォントファイルの読み込み ▼ */
+  @font-face {
+    font-family: 'CorporateLogo';
+    src: url('../fonts/Corporate-Logo-Medium-ver3.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* ▼ 2. ページ全体にコーポレートロゴフォントを適用 ▼ */
+  body {
+    font-family: 'CorporateLogo', sans-serif;
+  }
+
+  /* ▼ 3. フォントサイズの定数定義（前回設定したもの） ▼ */
+  :root {
+    --size-name: 2.4rem;
+    --size-heading: 1.5rem;
+    --size-body: 1.05rem;
+    --size-small: 0.95rem;
+    --size-timeline: 1.1rem;
+    --size-title: 2.2rem;
+    --size-caption: 0.9rem;
+  }
+
+  .a4-page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  @media print {
+    .a4-page { box-shadow: none; margin: 0; page-break-after: always; break-after: page; }
+    @page { margin: 0; size: A4 portrait; }
+  }
+  </style>
+</head>
+<body class="bg-gray-200 py-8 print:py-0 print:bg-white text-gray-700 font-sans leading-relaxed">

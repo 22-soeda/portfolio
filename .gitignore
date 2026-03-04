@@ -1,0 +1,16 @@
+# Node.js / npm 関連（必須）
+# パッケージ本体は容量が大きいため除外します（package.jsonがあれば復元可能）
+node_modules/
+npm-debug.log*
+
+# ビルド生成物（自動生成されるファイル）
+# srcフォルダとinput.cssからいつでも再生成できるため、通常はGit管理から外します。
+output.css
+index.html
+
+# エディタ関連（VS Codeのローカル設定など）
+.vscode/
+
+# OSが自動生成する不要なファイル（Mac / Windows）
+.DS_Store
+Thumbs.db
