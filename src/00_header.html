@@ -19,25 +19,27 @@
     font-family: 'CorporateLogo', sans-serif !important;
   }
 
-  /* ▼ 3. フォントサイズの定数定義（前回設定したもの） ▼ */
+  /* ▼ 3. フォントサイズの定数定義（全ページ共通） ▼ */
   :root {
-    --size-name: 2.4rem;
-    --size-heading: 1.5rem;
-    --size-body: 0.95rem;
-    --size-small: 0.95rem;
-    --size-timeline: 0.8rem;
-    --size-title: 2.2rem;
-    --size-caption: 0.9rem;
+    --size-name: 2.4rem;       /* 氏名 */
+    --size-heading: 1.5rem;    /* セクション見出し */
+    --size-title: 2.2rem;      /* プロジェクトのタイトル */
+    --size-body: 0.95rem;      /* 本文の基本サイズ */
+    --size-small: 0.95rem;     /* 補足テキストや詳細説明 */
+    --size-timeline: 0.85rem;   /* タイムラインの年・月 */
+    --size-caption: 0.9rem;    /* 画像キャプション */
+    --size-tiny: 0.7rem;    /* 画像キャプション */
   }
 
+  /* ▼ 4. 印刷・A4ページ共通レイアウト ▼ */
   .a4-page {
       width: 210mm;
-      height: 297mm;        /* min-heightからheightに変更し、高さをA4ぴったりに完全固定 */
-      overflow: hidden;     /* 枠（297mm）を1ミリでも超えた要素は隠す（次ページに送らない） */
+      height: 297mm;        /* 高さをA4ぴったりに完全固定 */
+      overflow: hidden;     /* 枠（297mm）を超えた要素は隠す（次ページに送らない） */
       margin: 0 auto;
       background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      box-sizing: border-box; /* パディング（内側の余白）を含めてサイズを計算させる */
+      box-sizing: border-box;
       margin-bottom: 20px;
     }
 
@@ -55,7 +57,7 @@
       }
       @page {
         size: A4 portrait;
-        margin: 0 !important; /* ブラウザ側の余白設定を強制的に排除 */
+        margin: 0 !important;
       }
     }
   </style>
