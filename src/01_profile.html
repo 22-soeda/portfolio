@@ -9,9 +9,9 @@
     :root {
       --size-name: 2.4rem;       /* 氏名 */
       --size-heading: 1.5rem;    /* Section見出し（Profile, Skillなど） */
-      --size-body: 1.05rem;      /* 本文の基本サイズ */
+      --size-body: 0.6rem;      /* 本文の基本サイズ */
       --size-small: 0.95rem;     /* 補足テキストや詳細説明 */
-      --size-timeline: 1.1rem;   /* タイムラインの年・月 */
+      --size-timeline: 0.8rem;   /* タイムラインの年・月 */
     }
     .a4-page {
       width: 210mm;
@@ -28,7 +28,7 @@
 </head>
 <body class="bg-gray-200 py-8 print:py-0 print:bg-white text-gray-700 leading-relaxed">
 
-  <div class="a4-page p-10 flex flex-col gap-6">
+  <div class="a4-page p-10 flex flex-col gap-4">
 
     <div class="flex justify-between items-end border-b pb-4">
       <div>
@@ -42,9 +42,9 @@
       </div>
     </div>
 
-    <div class="flex flex-row gap-8 mt-2">
+    <div class="flex flex-row gap-4 mt-2">
       
-      <div class="w-[55%] flex flex-col gap-10">
+      <div class="w-[55%] flex flex-col gap-4">
         
         <section>
           <h2 class="font-serif text-gray-500 border-b border-gray-400 mb-5 inline-block pr-12" style="font-size: var(--size-heading);">Profile</h2>
@@ -59,11 +59,11 @@
                 デバイス開発 / ロボットエンジニア
               </div>
               
-              <p class="indent-[1em]">
+              <p class="indent-[1em]" style="font-size: var(--size-body);">
                 大学では、二足歩行ロボットの製作を主軸として活動を行いました。
                 機械設計から、電気回路の設計、ハードウェアの作製および制御プログラムの作製までを個人で行っています。
               </p>
-              <p class="indent-[1em]">
+              <p class="indent-[1em]" style="font-size: var(--size-body);">
                 また、グループでのプロジェクトでは基本的に電気回路の設計を担当しており、そこで獲得した回路製作の知見から、小型のデバイス開発の業務を外部の会社から受託する活動も行いました。
               </p>
             </div>
@@ -82,7 +82,7 @@
               <div class="absolute -left-6.75 top-1.5 w-3 h-3 bg-blue-400 rounded-full border-2 border-white"></div>
               <div class="flex items-baseline gap-4">
                 <span class="font-bold text-gray-700 w-24 whitespace-nowrap tracking-wide" style="font-size: var(--size-timeline);">2023年 3月</span>
-                <span class="font-semibold text-blue-800">第25回 ROBO-ONE Light 出場</span>
+                <span class="font-semibold text-blue-800" style="font-size: var(--size-timeline);">第25回 ROBO-ONE Light 出場</span>
               </div>
             </div>
 
@@ -90,7 +90,7 @@
               <div class="absolute -left-6.75 top-1.5 w-3 h-3 bg-blue-400 rounded-full border-2 border-white"></div>
               <div class="flex items-baseline gap-4">
                 <span class="font-bold text-gray-700 w-24 whitespace-nowrap tracking-wide" style="font-size: var(--size-timeline);">2024年 2月</span>
-                <span class="font-semibold text-blue-800">NHK番組 魔改造の夜 「キックスケーター 25m 綱渡り」出演</span>
+                <span class="font-semibold text-blue-800" style="font-size: var(--size-timeline);">NHK番組 魔改造の夜 「キックスケーター 25m 綱渡り」出演</span>
               </div>
             </div>
 
@@ -98,7 +98,7 @@
               <div class="absolute -left-6.75 top-1.5 w-3 h-3 bg-blue-400 rounded-full border-2 border-white"></div>
               <div class="flex items-baseline gap-4">
                 <span class="font-bold text-gray-700 w-24 whitespace-nowrap tracking-wide" style="font-size: var(--size-timeline);">2024年 9月</span>
-                <span class="font-semibold text-blue-800">第43回 ROBO-ONE 出場</span>
+                <span class="font-semibold text-blue-800" style="font-size: var(--size-timeline);">第43回 ROBO-ONE 出場</span>
               </div>
             </div>
 
@@ -106,7 +106,7 @@
               <div class="absolute -left-6.75 top-1.5 w-3 h-3 bg-blue-400 rounded-full border-2 border-white"></div>
               <div class="flex items-baseline gap-4">
                 <span class="font-bold text-gray-700 w-24 whitespace-nowrap tracking-wide" style="font-size: var(--size-timeline);">2025年 3月</span>
-                <span class="font-semibold text-blue-800">第27回 ROBO-ONE Light 出場</span>
+                <span class="font-semibold text-blue-800" style="font-size: var(--size-timeline);">第27回 ROBO-ONE Light 出場</span>
               </div>
             </div>
 
@@ -114,7 +114,7 @@
               <div class="absolute -left-6.75 top-1.5 w-3 h-3 bg-blue-400 rounded-full border-2 border-white"></div>
               <div class="flex items-baseline gap-4">
                 <span class="font-bold text-gray-700 w-24 whitespace-nowrap tracking-wide" style="font-size: var(--size-timeline);">2025年 8月</span>
-                <span class="font-semibold text-blue-800"> XROBOCON出場</span>
+                <span class="font-semibold text-blue-800" style="font-size: var(--size-timeline);"> XROBOCON出場</span>
               </div>
             </div>
 
@@ -124,7 +124,7 @@
       </div>
 
 
-      <div class="w-[45%] flex flex-col gap-10">
+      <div class="w-[45%] flex flex-col gap-4">
         
         <section>
           <h2 class="font-serif text-gray-500 border-b border-gray-400 mb-5 inline-block pr-12" style="font-size: var(--size-heading);">Skill</h2>
