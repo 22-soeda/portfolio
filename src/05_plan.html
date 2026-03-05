@@ -1,0 +1,62 @@
+<div class="a4-page p-10 flex flex-col gap-6">
+
+  <div class="border-b-2 border-blue-200 pb-3 mb-2 flex justify-between items-end">
+    <h2 class="font-bold text-gray-700 tracking-wide" style="font-size: var(--size-title);">
+      今後の活動 : アクアリウムの環境管理オートメーション
+    </h2>
+  </div>
+
+  <div class="w-full flex flex-col gap-6 text-gray-700" style="font-size: var(--size-body);">
+    
+    <section>
+      <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2" style="font-size: var(--size-heading);">
+        <span class="w-1.5 h-5 bg-blue-500 inline-block"></span>背景・課題
+      </h3>
+      <p class="leading-relaxed pl-3.5 indent-[1em]">
+        幼少期、飼っていた熱帯魚を病気で亡くした経験が本プロジェクトの原点です。
+        熱帯魚の死因の多くは水質悪化やストレスといった<span class="font-bold text-red-500">「見えない脅威」</span>にあります。
+        特に小型水槽で行われることの多い「ベタ」等の飼育では、水量が少ないため環境変化が急激であり、水質の制御は難しくなります。
+        水質を悪くする、アンモニアや亜硝酸塩などの濃度をリアルタイムで把握することは従来の家庭用センサーでは困難でした。
+      </p>
+    </section>
+
+    <section>
+      <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2" style="font-size: var(--size-heading);">
+        <span class="w-1.5 h-5 bg-blue-500 inline-block"></span>ソリューション：ハードウェア × AI
+      </h3>
+      <div class="pl-3.5 flex flex-col gap-3">
+        <div class="bg-blue-50 p-3 rounded-md border border-blue-100">
+          <h4 class="font-bold text-blue-800 mb-1" style="font-size: var(--size-body);">1. センサーフュージョンによる水質定量化モデル</h4>
+          <p style="font-size: var(--size-small);">
+            TDSセンサーで得られる電気伝導率に加え、温度、日照時間、給餌・換水履歴、個体数などの多角的な情報を統合。
+            また、試験紙による各物質の濃度を教師データとし、AIによる多変量解析を用いることで、
+            <span class="font-bold">直接測定が難しい詳細な水質情報を連続的に推察・定量化</span>します。
+          </p>
+        </div>
+
+        <div class="bg-blue-50 p-3 rounded-md border border-blue-100">
+          <h4 class="font-bold text-blue-800 mb-1" style="font-size: var(--size-body);">2. 画像解析による「体調」の可視化</h4>
+          <p style="font-size: var(--size-small);">
+            カメラ映像からAIが魚の運動性や遊泳パターンを解析。<span class="font-bold">魚の体調を数値化</span>することで、水質データだけでは捉えきれない生体特有のストレスや病気の予兆を早期に検知します。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="font-bold text-blue-700 mb-2 flex items-center gap-2" style="font-size: var(--size-heading);">
+        <span class="w-1.5 h-5 bg-blue-500 inline-block"></span>目標とビジョン
+      </h3>
+      <p class="leading-relaxed pl-3.5 indent-[1em]">
+        ハードウェア技術による「非言語情報の取得」と、AIによる「高次な環境推論」を融合させ、小さな生態系を完全に管理・制御するシステムを目指します。
+単なる自動化にとどまらず、<span class="font-bold">直接測定が困難な変量が引き起こす複雑な問題を、センサーフュージョンとAI推論によって制御可能な形へと落とし込む</span>アーキテクチャの実現を目指しています。
+      </p>
+    </section>
+
+  </div>
+
+  <div class="w-full flex flex-col items-center justify-center mt-2">
+      <img src="./images/05_diagram.jpg" alt="プロダクト概略システム構成図" class="w-full h-auto max-h-45 object-contain">
+  </div>
+
+</div>
